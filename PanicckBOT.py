@@ -6,40 +6,39 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
 cl = LINETCR.LINE()
-cl.login(token="EmWiWf1zyILqQ0gWCg6a.2VkhNbXAiKA+FT3J3JVdUG.9O8jcP3liJeoST74Sxe6prVWOyvbSFartn4V5RFvX9s=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="Emd6kdXBwh5Iw8iDtgae.4NaUioi6za9OoLdMB67ApG.yB8G7R/ftOayXxd/tdqSv4WM9o6vNlUpMpKfEB8X4M4=")
+ki.login(qr=True)
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="EmGVb3hpkIIWw5GiTvR2.9KvXEwlSAj0MgWbzqqSqGG.Kmu9uIJ64JP091RooPBLjZke3XiawO3HM6JAH9a+eZE=")
+ki2.login(qr=True)
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="EmYc7hwHUN2lMlLeikKc.Ypc4z9XzFqUJ6h0QDI7t3a.ISRcc5ats1jDTfmu+38VgccGEDSbbyCEppqldf49tHk=")
+ki3.login(qr=True)
 ki3.loginResult()
 
 print u"login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" D̦̰̣ͤ̊a̰͗͒̾͂̈́ͥ̑ț̶̵̞̠͕̈́͂̇̆̕ě͘͏̷͓͈̯ ͇́͐͋A̷̼͙̟̟̰̗̘͗͛͛ͮ̅͆ͭ̚ ̝̺̼̪͑ͨͥͯ̇͂̽̓̀͞L̙̥̥̫̹̆ͨ̈́̑̂̄̈́́͘͞i̞̪̝̱̦͆̌̔ͭͪ͡͡ṽ̺͉̘̤̼͉̥̳̈ͧ̂̃́̎͟͝͝eͬ̊͜͏̠̙̱͚͈͖̱ ̱̩͇̯̬̣̮̈̓ͩ̊͟͡͠W̵̵̧͖̰̩͚̽ị̝̦͖̦̻̠̿ͪ͝͠k̵̺̜̝̳̲̟ͧ̔ͮ̄̈́͊̓ͣ̈ͅi̛̼͖͖̺ͦ̀ͪ̽̎́̀ͪ ̖̭͚́B̺̮͙̺̮̯̓̽̈ͪ̚̚͡o̸̘͖̩̳̖̊͆ͬ͊ͬ͑͌ͅt͚͖̙̻̾ͧͥͩ̄̎͒́ͧ ̿ͫͮ҉̸̠͍̳̜C̴̲͔͉͉͍̯̿̆̂̍̄ͧͯ̀o͈͎̝̮̭̮̖̎ͬm̸̨̞͖̞̤̞̥̗͂͆ͨ̂̈̐̑ͭ͢ͅḿ̸͉͕̖͚͙͕̃͋͗͘a̧ͧ͊͂͊̔̃̋ͣ͏̢̯̟̪̝ͅn̛͈ͨͫ̀̒̎̚͟d̸̗̥̼ͧ͆
-
+helpMessage =""" BOBBOT PROTECT !
        
-Creator = Untuk melihat pembuaf bot
-Gcreator = Untuk melihat pembuaf grub
+Creator = Untuk melihat pembuat bot
+Gcreator = Untuk melihat pembuat grub
 
 
-       C⃟O⃟M⃟M⃟A⃟N⃟D⃟ C⃟R⃟E⃟A⃟T⃟O⃟R⃟
+       COMMAND CREATOR
 ❂ Add staff @ 
 ❂ Remove staff @
 ❂ Staff list
 ❂ InviteMeTo:
 ❂ Gcreator:inv
 
-       C⃟O⃟M⃟M⃟A⃟N⃟D⃟ A⃟D⃟M⃟I⃟N⃟
+       COMMAND ADMIN
 ❁  Id
 ❁  Mid
 ❁  Mid @
@@ -56,7 +55,7 @@ Gcreator = Untuk melihat pembuaf grub
 ❁  Steal @
 ❁  Steal home @
 
-        C⃟O⃟M⃟M⃟A⃟N⃟D⃟ P⃟R⃟O⃟T⃟E⃟C⃟T⃟
+        COMMAND PROTECT
 ☠ Protect on
 ☠􀜁􀇔􏿿 qrprotect on/off
 ☠ Inviteprotect on
@@ -65,13 +64,13 @@ Gcreator = Untuk melihat pembuaf grub
 ☠ Unban @
 ☠ Bunuh
 =========================
-ɪᴅ : line.me/ti/p/~babydino20
-ʙᴏᴛ : B⃟A⃟B⃟Y⃟D⃟I⃟N⃟O⃟ B⃟O⃟T⃟
-sᴜᴘᴏʀᴛ ʙʏ : L̵̛̦̝̟̼͙̬̦̝̯͒͒̊͠I̶̎̎͋̑͂̽ͥ̚҉̼̮͍͇̣̦̪͎͓Ņ̴̠̖̹͙̗͕́̏̉̔̾͋ͧ̑Ḙ̛̦̭̰̘̳̼̪̒͛̃͊̒ͮ̋́̚͡ͅ ̶̣̙͈̳͍͂̀̽̾̇̓̐ͅD͈͎͇̠̪͍͇͉̀̈͌E̵͊̀҉͔͖̭͉̘͇V͈̖̪͈̓̓ͦ̂̓̍͒̐ͅͅE̝̲͋ͨL̛̯͎̝̈̌̃́Ŏ̵͌̔ͤ͊͏̙͙ͅP̴͎͙͔̠̖̫ͬ͑͑̅̆̉̕E̸̴̠͛͂ͨR͈̫͎͒ͮ͒ͯ̀ ̶̢̯̝͕̫̮̺͊̉̿̿̽̈̅͐ͅB̙͉͉̼̫̗̟̯̽̍ͪ̋͆͂͂͘͡Ö̸̧͍̬̟͙́̅͆̎̃̕T̶̯͔̦̟̠̊̀̄̐̇́̄͂ͭ͜S̵̡͈̝̭͈̪ͮ̈̓̍̀
+ɪᴅ : line.me/ti/p/~bobtndm
+ʙᴏᴛ : BOTBOB
+sᴜᴘᴏʀᴛ ʙʏ : TUHAN YME
 """
 helo=""
 
-KAC=[cl,ki,ki2,ki3]
+KAC=["u0e495c4debaa244e5f61f4e090950f75","uf43eb623c4b246c45690bf19e048af05","uf41eeac6f34ebb531b1acba159203dea","u1d49a62a9c1ce9bea54d0eced64cf04"]
 mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
@@ -81,19 +80,19 @@ ki5mid = ki5.getProfile().mid
 ki6mid = ki6.getProfile().mid
 ki7mid = ki7.getProfile().mid
 Bots = [mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid,ki7mid]
-admsa = "uddb6b470ab4b54c5fbc69d7600cc3bc8"
-admin = "uddb6b470ab4b54c5fbc69d7600cc3bc8"
+admsa = "u0e495c4debaa244e5f61f4e090950f75"
+admin = "u0e495c4debaa244e5f61f4e090950f75"
 
 wait = {
     'contact':False,
     'autoJoin':True,
-    'autoCancel':{"on":False,"members":50},
+    'autoCancel':{"on":False,"members":1},
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"Thanks For Add Me",
+    'message':"Thanks For Add Me:))",
     "lang":"JP",
-    "comment":"Thanks For Add Me",
+    "comment":"Thanks For Add Me:))",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -181,7 +180,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u1b3ce3c7bfbbc5f4b5f2f6ded16ba3a5":
+                if msg.from_ == "u0e495c4debaa244e5f61f4e090950f75":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -1017,7 +1016,7 @@ def bot(op):
                 cl.sendMessage(msg)
             elif cms(msg.text,["creator","Creator"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "uddb6b470ab4b54c5fbc69d7600cc3bc8"}
+                msg.contentMetadata = {'mid': "u0e495c4debaa244e5f61f4e090950f75"}
                 cl.sendText(msg.to,"􀜁􀇔􏿿 My Creator 􀜁􀇔􏿿 ")
                 cl.sendMessage(msg)
                 cl.sendText(msg.to,"􀜁􀇔􏿿 Jangan kick dia dari grup 􀜁􀇔􏿿 ")
@@ -1355,7 +1354,7 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "== Daftar Orang yang nyider == %s\nitu dia\n\nKalo yang dibawah ini daftar orang yang nyider dan ga muncul di grub\n%sMalu maluin,minta join nangis nagis taunya nyider. ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "== Daftar Orang yang nyider == %s\nitu dia\n\nKalo yang dibawah ini daftar orang yang nyider dan ga muncul di grub\n%sKetauan deh. ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
                         cl.sendText(msg.to, "An already read point has not been set.\n「set」you can send ♪ read point will be created ♪")						
 
@@ -2162,7 +2161,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Pb1 bye" in msg.text:
+            elif "Bot1 bye" in msg.text:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -2170,7 +2169,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Pb2 bye" in msg.text:
+            elif "Bot2 bye" in msg.text:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -2178,7 +2177,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Pb3 bye" in msg.text:
+            elif "Bot3 bye" in msg.text:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -2186,7 +2185,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Kb4 bye" in msg.text:
+            elif "Bot4 bye" in msg.text:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -2194,7 +2193,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Kb5 bye" in msg.text:
+            elif "Bot5 bye" in msg.text:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -2202,7 +2201,7 @@ def bot(op):
                     except:
                         pass
 #-----------------------------------------------
-            elif "Kb6 bye" in msg.text:
+            elif "Bot6 bye" in msg.text:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
@@ -2211,37 +2210,24 @@ def bot(op):
                         pass
 #-----------------------------------------------
             elif "Kb Key" in msg.text:
-                ki.sendText(msg.to,"""      􀜁􀇔􏿿􀜁􀇔􏿿 Tohka Yatogami  [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Tohka in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb1 Gift]\n􀜁􀇔􏿿[Kb1 bye]\n\n   
+                ki.sendText(msg.to,"""      􀜁􀇔􏿿􀜁􀇔􏿿 Tohka Yatogami  [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Tohka in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Bot1 Gift]\n􀜁􀇔􏿿[Bot1 bye]\n\n   
   
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
-""")
-                ki2.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Miku Izayoi  [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Miku in]\n􀜁􀇔􏿿[2Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb2 Gift]\n􀜁􀇔􏿿[Kb2 bye]\n\n     
+                ki2.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Miku Izayoi  [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Miku in]\n􀜁􀇔􏿿[2Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Bot2 Gift]\n􀜁􀇔􏿿[Bot2 bye]\n\n     
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
-""")
-                ki3.sendText(msg.to,"""     􀜁􀇔􏿿��􀇔􏿿 Kurumi Tokisaki [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kurumi in]\n􀜁􀇔􏿿[3Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb3 Gift]\n􀜁􀇔􏿿[Kb3 bye]\n\n     
+                ki3.sendText(msg.to,"""     􀜁􀇔􏿿��􀇔􏿿 Kurumi Tokisaki [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kurumi in]\n􀜁􀇔􏿿[3Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Bot3 Gift]\n􀜁􀇔􏿿[Bot3 bye]\n\n     
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
-""")
-                ki4.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Origami Tobiichi [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Inori in]\n􀜁􀇔􏿿[4Aditname:]\n􀜁􀇔������[B Cancel]\n����􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb4 Gift]\n􀜁􀇔􏿿[Kb4 bye]\n\n     
+                ki4.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Origami Tobiichi [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Inori in]\n􀜁􀇔􏿿[4Aditname:]\n􀜁􀇔������[B Cancel]\n����􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Bot4 Gift]\n􀜁􀇔􏿿[Bot4 bye]\n\n     
         
   
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
-""")
-                ki5.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Origami Tobiichi [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁����􏿿 \n\n􀜁􀇔����[Origami in]\n􀜁􀇔􏿿[5Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb5 Gift]\n􀜁􀇔􏿿[Kb5 bye]\n\n     
-        
-  
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞I͛��̏��̵̣̻̝̘͍͊̉ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
-""")
-                ki6.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb6 in]\n􀜁􀇔􏿿[6Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Kb6 Gift]\n􀜁􀇔􏿿[Kb6 bye]\n\n     
-        g
-  
-☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
-""")
+                ki5.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 Origami Tobiichi [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁����􏿿 \n\n􀜁􀇔����[Origami in]\n􀜁􀇔􏿿[5Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Bot5 Gift]\n􀜁􀇔􏿿[Bot5 bye]\n\n     
+		
+		
+                ki6.sendText(msg.to,"""     􀜁􀇔􏿿􀜁􀇔􏿿 KITSUNE BOT [KB] 􀜁􀇔􏿿􀜁􀇔􏿿  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb6 in]\n􀜁􀇔􏿿[6Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Bot6 Gift]\n􀜁􀇔􏿿[Bot6 bye]\n\n     
+
 #-----------------------------------------------
             elif msg.text in ["Welcome","wc","welcome","Wc"]:
                 ginfo = cl.getGroup(msg.to)
